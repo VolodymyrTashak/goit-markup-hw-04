@@ -150,15 +150,14 @@ box-sizing: border-box;
 }
 
 .content-mail-icon{
+fill: currentColor;
     margin-right: 10px;
-    width: 20px;
-    height: 20px;
+ 
 }
 
 .content-tel-icon{
+    fill: currentColor;
       margin-right: 10px;
-    width: 20px;
-    height: 20px;
 }
 
 .current{
@@ -169,8 +168,7 @@ box-sizing: border-box;
 
 .hero{
     background-color: var(--hero-bcg-color);
-background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4));
-background-image: url(../images/hero-bgc.jpg);
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgc.jpg);
  background-repeat: no-repeat;
 background-position: center;
 background-size: contain;
@@ -449,6 +447,7 @@ background-color: var(--footer-bcg-color)
 }
 
 .footer-content{
+    align-items: baseline;
     display: flex;
 }
 
@@ -495,8 +494,16 @@ margin-bottom: 0px;
 }
 
 /* Footer-soc */
+.footer-soc{
+    margin-left: 70px;
+}
 
 .footer-soc-title{
+    font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
     color: var(--footer-soc-title-color);
     margin-bottom: 20px;
 
@@ -545,6 +552,8 @@ background-color: var(--header-accent-color);
 }
 
 .filter-btn{
+    padding: 6px 22px;
+    border: transparent;
     border-radius: 4px;
 font-family: inherit;
     color: var(--main-first-color);
@@ -554,7 +563,7 @@ line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 cursor: pointer;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
 }
 
 .filter-item:not(:last-child){
@@ -592,7 +601,21 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 .proect-item:active
 .proect-item:hover,
 .proect-item:focus{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.proect-link{
+    text-decoration: none;
+}
+
+.proect-link:active,
+.proect-link:hover,
+.proect-link:focus{
+    display: block;
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .proect-title{
